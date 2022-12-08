@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="01_Custom_Resources_Scenario" tests="33" time="17.028">
+  <testsuite name="Get Token Acceptance / getBearerToken" id="60c2f63c-fbc4-4db8-b89e-860d8b70fa05" timestamp="2022-11-22T05:34:26.373Z" tests="1" failures="0" errors="0" time="0.187">
+    <testcase name="Status code is 200 OK" time="0.187" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Get EMS Token / Get EMS Token" id="5bfbc5a3-0c75-46f7-aa96-8289c37175fe" timestamp="2022-11-22T05:34:26.373Z" tests="0" failures="0" errors="0" time="0.125"/>
+  <testsuite name="verify Activation of BOC FF / Generate master xsuaa token" id="ce4b3cc6-ec1f-42ac-a915-e246a59be272" timestamp="2022-11-22T05:34:26.373Z" tests="1" failures="1" errors="0" time="0.109">
+    <testcase name="Status code is 200 OK" time="0.109" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 401">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: verify Activation of BOC FF / Generate master xsuaa token.]]>
+        <![CDATA[Test description: Status code is 200 OK.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 401
+   at Object.eval sandbox-script.js:1:3).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="verify Activation of BOC FF / Check if BOC feature flag is enabled" id="e98c6069-3b70-41aa-ae37-20f9a129a376" timestamp="2022-11-22T05:34:26.373Z" tests="0" failures="0" errors="0" time="0.064"/>
+  <testsuite name="Custome resource search parameter eventing / 02 Get Custom Resource[created]" id="2b5e35b5-eb1f-4afe-98c9-23772d4d9efc" timestamp="2022-11-22T05:34:26.373Z" tests="2" failures="0" errors="0" time="2.711">
+    <testcase name="02 01- Status code is 200" time="2.711" classname="01CustomResourcesScenario"/>
+    <testcase name="02 02 - Multiple checks on response" time="2.711" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 03.a Create Queue - Core SAPEvent" id="59c10d6f-bf05-45e7-9814-78ee871b5cbb" timestamp="2022-11-22T05:34:26.373Z" tests="1" failures="0" errors="0" time="0.752">
+    <testcase name="03.a 01- Status code is 201" time="0.752" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 03.b Create Queue Subscription: Topic Core SAPEvent" id="e8d36c9f-478e-4de7-ac75-186d7dab93af" timestamp="2022-11-22T05:34:26.373Z" tests="1" failures="0" errors="0" time="1.009">
+    <testcase name="03.b 01- Status code is 201" time="1.009" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 04.a  Get Custom Resource" id="3d4e4a02-430c-44b8-9823-6a10b0965e41" timestamp="2022-11-22T05:34:26.373Z" tests="3" failures="0" errors="0" time="0.462">
+    <testcase name="04.a- Status code is 200" time="0.462" classname="01CustomResourcesScenario"/>
+    <testcase name="04.a 01 - Status Message" time="0.462" classname="01CustomResourcesScenario"/>
+    <testcase name="04.a 02- Validate resource" time="0.462" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 04.b  Get SearchParameter Status" id="716f6198-4973-4362-9878-1c780b497d21" timestamp="2022-11-22T05:34:26.373Z" tests="3" failures="0" errors="0" time="0.381">
+    <testcase name="04.b 01- Status code is 200" time="0.381" classname="01CustomResourcesScenario"/>
+    <testcase name="04.b 02- status response evaluation " time="0.381" classname="01CustomResourcesScenario"/>
+    <testcase name="04.b 03- Multiple checks on response" time="0.381" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 04.c  Get Custom Resource Profile" id="f264e1af-7304-4095-b146-9d0dc73c608f" timestamp="2022-11-22T05:34:26.373Z" tests="3" failures="0" errors="0" time="0.499">
+    <testcase name="04.c- Status code is 200" time="0.499" classname="01CustomResourcesScenario"/>
+    <testcase name="04.c 01 - Status Message" time="0.499" classname="01CustomResourcesScenario"/>
+    <testcase name="04.c 02- Validate resource" time="0.499" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 04.d  Get ChargeDefinition item" id="470d1705-d679-4c9f-a624-b02645ff9b5a" timestamp="2022-11-22T05:34:26.373Z" tests="3" failures="0" errors="0" time="0.354">
+    <testcase name="04.d 01- Status code is 200" time="0.354" classname="01CustomResourcesScenario"/>
+    <testcase name="04.d 02- status response evaluation " time="0.354" classname="01CustomResourcesScenario"/>
+    <testcase name="04.d 03- Multiple checks on response" time="0.354" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 05.a Create Patient" id="31de8849-1d4c-486d-9d19-d6efd4fa1f67" timestamp="2022-11-22T05:34:26.373Z" tests="3" failures="3" errors="0" time="3.067">
+    <testcase name="05.a- Status code is 201" time="3.067" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 500">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 05.a Create Patient.]]>
+        <![CDATA[Test description: 05.a- Status code is 201.]]>
+        <![CDATA[Error message: expected response to have status code 201 but got 500.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 201 but got 500
+   at Object.eval sandbox-script.js:1:15).]]>
+      </failure>
+    </testcase>
+    <testcase name="05.a 01 - Status Message" time="3.067" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="expected response to have status reason 'Created' but got 'Internal Server Error'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 05.a Create Patient.]]>
+        <![CDATA[Test description: 05.a 01 - Status Message.]]>
+        <![CDATA[Error message: expected response to have status reason 'Created' but got 'Internal Server Error'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'Created' but got 'Internal Server Error'
+   at Object.eval sandbox-script.js:2:15).]]>
+      </failure>
+    </testcase>
+    <testcase name="05.a 02- Validate resourceType" time="3.067" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="expected 'OperationOutcome' to equal 'Patient'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 05.a Create Patient.]]>
+        <![CDATA[Test description: 05.a 02- Validate resourceType.]]>
+        <![CDATA[Error message: expected 'OperationOutcome' to equal 'Patient'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'OperationOutcome' to equal 'Patient'
+   at Object.eval sandbox-script.js:3:15).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 05.b Create Account" id="3943f69b-487f-4fb4-93da-f671b6f498ae" timestamp="2022-11-22T05:34:26.373Z" tests="3" failures="3" errors="0" time="0.632">
+    <testcase name="05.b - Status code is 201" time="0.632" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 422">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 05.b Create Account.]]>
+        <![CDATA[Test description: 05.b - Status code is 201.]]>
+        <![CDATA[Error message: expected response to have status code 201 but got 422.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 201 but got 422
+   at Object.eval sandbox-script.js:1:16).]]>
+      </failure>
+    </testcase>
+    <testcase name="05.b 01- Status Message" time="0.632" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="expected response to have status reason 'Created' but got 'Unprocessable Entity'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 05.b Create Account.]]>
+        <![CDATA[Test description: 05.b 01- Status Message.]]>
+        <![CDATA[Error message: expected response to have status reason 'Created' but got 'Unprocessable Entity'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'Created' but got 'Unprocessable Entity'
+   at Object.eval sandbox-script.js:2:16).]]>
+      </failure>
+    </testcase>
+    <testcase name="05.b 02- Validate resourceType" time="0.632" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="expected 'OperationOutcome' to equal 'Account'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 05.b Create Account.]]>
+        <![CDATA[Test description: 05.b 02- Validate resourceType.]]>
+        <![CDATA[Error message: expected 'OperationOutcome' to equal 'Account'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'OperationOutcome' to equal 'Account'
+   at Object.eval sandbox-script.js:3:16).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 05.c Create Organization" id="05854acc-dd12-484e-9dcb-38190d4d7d60" timestamp="2022-11-22T05:34:26.373Z" tests="1" failures="1" errors="1" time="1.633">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Cannot read properties of undefined (reading '0')
+---
+]]></system-err>
+    <testcase name="02 01- Organization resource created, status 201" time="1.633" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="{&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;exception&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;Unable to determine unique profile for resource type 'SAP_HEALTH_EVENT'.&quot;}}],&quot;id&quot;:&quot;fb9e2380-0ba2-4de1-95bb-b8b551b9d581&quot;,&quot;resourceType&quot;:&quot;OperationOutcome&quot;}: expected 500 to equal 201">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 05.c Create Organization.]]>
+        <![CDATA[Test description: 02 01- Organization resource created, status 201.]]>
+        <![CDATA[Error message: {"issue":[{"severity":"error","code":"exception","details":{"text":"Unable to determine unique profile for resource type 'SAP_HEALTH_EVENT'."}}],"id":"fb9e2380-0ba2-4de1-95bb-b8b551b9d581","resourceType":"OperationOutcome"}: expected 500 to equal 201.]]>
+        <![CDATA[Stacktrace: AssertionError: {"issue":[{"severity":"error","code":"exception","details":{"text":"Unable to determine unique profile for resource type 'SAP_HEALTH_EVENT'."}}],"id":"fb9e2380-0ba2-4de1-95bb-b8b551b9d581","resourceType":"OperationOutcome"}: expected 500 to equal 201
+   at Object.eval sandbox-script.js:1:17).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 05.d Create ChargeItem" id="a1b46989-b4fd-4339-a24f-0e812b366984" timestamp="2022-11-22T05:34:26.373Z" tests="2" failures="2" errors="0" time="0.710">
+    <testcase name="05.c 01 - Status code is 201" time="0.710" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 422">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 05.d Create ChargeItem.]]>
+        <![CDATA[Test description: 05.c 01 - Status code is 201.]]>
+        <![CDATA[Error message: expected response to have status code 201 but got 422.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 201 but got 422
+   at Object.eval sandbox-script.js:1:18).]]>
+      </failure>
+    </testcase>
+    <testcase name="05.c 02- Validate resourceType" time="0.710" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="expected 'OperationOutcome' to equal 'ChargeItem'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 05.d Create ChargeItem.]]>
+        <![CDATA[Test description: 05.c 02- Validate resourceType.]]>
+        <![CDATA[Error message: expected 'OperationOutcome' to equal 'ChargeItem'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'OperationOutcome' to equal 'ChargeItem'
+   at Object.eval sandbox-script.js:2:18).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 05.e Create an instance of Custom Resource" id="72296c59-14b6-48f4-9dd9-05a80c6724b1" timestamp="2022-11-22T05:34:26.373Z" tests="4" failures="2" errors="0" time="0.593">
+    <testcase name="05.e 01- Status code is 201" time="0.593" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 422">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 05.e Create an instance of Custom Resource.]]>
+        <![CDATA[Test description: 05.e 01- Status code is 201.]]>
+        <![CDATA[Error message: expected response to have status code 201 but got 422.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 201 but got 422
+   at Object.eval sandbox-script.js:1:19).]]>
+      </failure>
+    </testcase>
+    <testcase name="05.e 02- status response evaluation " time="0.593" classname="01CustomResourcesScenario"/>
+    <testcase name="05.e 03- Multiple checks on OperationOutcome" time="0.593" classname="01CustomResourcesScenario"/>
+    <testcase name="05.e 04- Checks on id and version" time="0.593" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading 'versionId')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 05.e Create an instance of Custom Resource.]]>
+        <![CDATA[Test description: 05.e 04- Checks on id and version.]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading 'versionId').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading 'versionId')
+   at Object.eval sandbox-script.js:4:19).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 06 Consume Custom Core Message SAPEvent" id="4b20d1d4-b734-48f7-8196-60646e8b441d" timestamp="2022-11-22T05:34:26.373Z" tests="2" failures="1" errors="0" time="0.029">
+    <testcase name="Status code is 200 or 204" time="0.011" classname="01CustomResourcesScenario"/>
+    <testcase name="06 03- consume-core-message-fail" time="0.011" classname="01CustomResourcesScenario">
+      <failure type="AssertionFailure" message="No event received matching the resourceId null">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 87ef5ea2-c43b-4574-9090-cf8a5da44dd3.]]>
+        <![CDATA[Collection name: 01_Custom_Resources_Scenario.]]>
+        <![CDATA[Request name: Custome resource search parameter eventing / 06 Consume Custom Core Message SAPEvent.]]>
+        <![CDATA[Test description: 06 03- consume-core-message-fail.]]>
+        <![CDATA[Error message: No event received matching the resourceId null.]]>
+        <![CDATA[Stacktrace: Error: No event received matching the resourceId null
+   at Object.eval sandbox-script.js:2:20).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 08 Get CapabilityStatement" id="8646c6b7-6a11-4c77-99d3-0515b9666e20" timestamp="2022-11-22T05:34:26.373Z" tests="2" failures="0" errors="0" time="0.629">
+    <testcase name="08 01- Status code is 200" time="0.629" classname="01CustomResourcesScenario"/>
+    <testcase name="08 02- status response evaluation " time="0.629" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 09 GET CapabilityStatement Core Service" id="b6107d54-5572-40b5-9a6a-bab5eecb79af" timestamp="2022-11-22T05:34:26.373Z" tests="10" failures="0" errors="0" time="0.441">
+    <testcase name="09 01- Retrieved SSC Core CapabilityStatement." time="0.441" classname="01CustomResourcesScenario"/>
+    <testcase name="09 02- Validate Resource Id and URL of SSC-Core-CapabilityStatement" time="0.441" classname="01CustomResourcesScenario"/>
+    <testcase name="09 03- Validate Resource Count is greater than or equal to 133" time="0.441" classname="01CustomResourcesScenario"/>
+    <testcase name="09 04- Validate System interactions count is equal to 2" time="0.441" classname="01CustomResourcesScenario"/>
+    <testcase name="09 05- Validate System Search Params count is greater than or equal to 5" time="0.441" classname="01CustomResourcesScenario"/>
+    <testcase name="09 06- Validate System Operations count to be atleast 7" time="0.441" classname="01CustomResourcesScenario"/>
+    <testcase name="09 07- resource found" time="0.441" classname="01CustomResourcesScenario"/>
+    <testcase name="09 09- Created Profile found" time="0.441" classname="01CustomResourcesScenario"/>
+    <testcase name="09 11- validate custom resource serach param" time="0.441" classname="01CustomResourcesScenario"/>
+    <testcase name="09 12- Validate custom resource interaction" time="0.441" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 10 GET CapabilityStatement Core Service using meta data endpoint" id="1ee925a5-18b9-46c6-a896-e7993e4704df" timestamp="2022-11-22T05:34:26.373Z" tests="10" failures="0" errors="0" time="0.382">
+    <testcase name="10 01- Retrieved SSC Core CapabilityStatement." time="0.382" classname="01CustomResourcesScenario"/>
+    <testcase name="10 02- Validate Resource Id and URL of SSC-Core-CapabilityStatement" time="0.382" classname="01CustomResourcesScenario"/>
+    <testcase name="10 03- Validate Resource Count is greater than or equal to 133" time="0.382" classname="01CustomResourcesScenario"/>
+    <testcase name="10 04- Validate System interactions count is equal to 2" time="0.382" classname="01CustomResourcesScenario"/>
+    <testcase name="10 05- Validate System Search Params count is greater than or equal to 5" time="0.382" classname="01CustomResourcesScenario"/>
+    <testcase name="10 06- Validate System Operations count to be atleast 7" time="0.382" classname="01CustomResourcesScenario"/>
+    <testcase name="10 07- resource found" time="0.382" classname="01CustomResourcesScenario"/>
+    <testcase name="10 09- Created Profile found" time="0.382" classname="01CustomResourcesScenario"/>
+    <testcase name="10 11- validate custom resource serach param" time="0.382" classname="01CustomResourcesScenario"/>
+    <testcase name="10 12- Validate custom resource interaction" time="0.382" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 11 Delete Queue - Core SAPEvent" id="4c9a8632-1beb-4c71-8aa0-d2781dbc41f1" timestamp="2022-11-22T05:34:26.373Z" tests="1" failures="0" errors="0" time="0.654">
+    <testcase name="11 01- Status code is 204" time="0.654" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custome resource search parameter eventing / 12 Confirm Delete Queue - Core SAPEvent" id="8ffceba0-c788-42de-a2ca-873744e986aa" timestamp="2022-11-22T05:34:26.373Z" tests="1" failures="0" errors="0" time="0.217">
+    <testcase name="12 01- Status code is 404" time="0.217" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custom resource with multiple profile / 13.a Create instance of profile 1with meta without mandatory field" id="d7c65511-daa3-4e6e-bdc7-a6139f03a6e9" timestamp="2022-11-22T05:34:26.373Z" tests="2" failures="0" errors="0" time="0.625">
+    <testcase name="13 a 01- Create instance error code:Status code is 422" time="0.625" classname="01CustomResourcesScenario"/>
+    <testcase name="13 a 02- verify response body" time="0.625" classname="01CustomResourcesScenario"/>
+  </testsuite>
+  <testsuite name="Custom resource with multiple profile / 13.b Create instance of profile 1with meta with mandatory field" id="da2e1a0b-447d-4c63-92ee-0630936dced4" timestamp="2022-11-22T05:34:26.373Z" tests="0" failures="0" errors="0" time="0.499"/>
+</testsuites>
